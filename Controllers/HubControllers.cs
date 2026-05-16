@@ -20,7 +20,7 @@ namespace APS_Automation_Server.Controllers
         }
 
 
-        [HttpGet("hubs")]
+        [HttpGet("hub")]
         public async Task<ActionResult> ListHubs()
         {
             var tokens = await _apsAuthService.PrepareTokens(Request, Response, _apsAuthService);
